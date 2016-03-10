@@ -5,7 +5,7 @@
 int main()
 {
       float a, b, c, x1, x2, d;
-      printf ("input a,b,c separated by space, then press enter \n");
+      printf ("Input a,b,c separated by space, then press enter \n");
       scanf ("%f%f%f", &a, &b, &c);
       if(a == 0) {
             fprintf(stderr,"A can't be equal 0\n");
@@ -20,6 +20,12 @@ int main()
             fprintf (stderr,"The root does not exist \n");
             exit(EXIT_FAILURE);
       }
-      
+      if (x1 == x2) {
+                  printf ("Roots are equal\n");
+                  printf ("x = %.2f\n",x1);
+      }
+      else {
+            printf ("x1 = %.2f    x2 = %.2f\n",x1, x2); 
+      }           
       return 0;
 }
