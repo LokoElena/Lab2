@@ -12,5 +12,14 @@ int main()
             exit(EXIT_FAILURE);
       }
       d = (b*b)-(4*a*c);
+      if (d >= 0) {
+            x1 = (-b + sqrt(d)) / (2 * a);
+            x2 = (-b - sqrt(d)) / (2 * a);
+      }
+      else {
+            fprintf (stderr,"The root does not exist \n");
+            exit(EXIT_FAILURE);
+      }
+      
       return 0;
 }
