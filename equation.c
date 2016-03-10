@@ -11,5 +11,6 @@ int main()
             fprintf(stderr,"A can't be equal 0\n");
             exit(EXIT_FAILURE);
       }
+      d = (b*b)-(4*a*c);
       return 0;
 }
