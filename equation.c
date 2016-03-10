@@ -4,5 +4,8 @@
 
 int main()
 {
+      float a, b, c, x1, x2, d;
+      printf ("input a,b,c separated by space, then press enter \n");
+      scanf ("%f%f%f", &a, &b, &c);
       return 0;
 }
